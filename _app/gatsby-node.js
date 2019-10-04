@@ -24,6 +24,14 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
+
+        allJupyyterNotebook {
+          edges {
+            node {
+              html
+            }
+          }
+        }
       }
     `
   )
@@ -44,6 +52,12 @@ exports.createPages = async ({ graphql, actions }) => {
         slugPath: subject.node.fields.slugPath,
       },
     })
+  })
+
+  const notebooks = result.data.allJupyyterNotebook.edges
+
+  notebooks.forEach(notebook => {
+    //createPage()
   })
 }
 

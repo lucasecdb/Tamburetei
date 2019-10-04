@@ -30,6 +30,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    '@gatsby-contrib/gatsby-transformer-ipynb',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
