@@ -25,7 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
 
-        allJupyyterNotebook {
+        allJupyterNotebook {
           edges {
             node {
               html
@@ -54,7 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  const notebooks = result.data.allJupyyterNotebook.edges
+  const notebooks = result.data.allJupyterNotebook.edges
 
   notebooks.forEach(notebook => {
     //createPage()
