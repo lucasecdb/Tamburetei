@@ -4,6 +4,11 @@
   height: 100%;
 }
 
+.mainContent {
+  background-color: var(--color-surface);
+  color: var(--on-surface);
+}
+
 .footer {
   background-color: var(--color-surface-accent);
   color: var(--on-surface-accent);

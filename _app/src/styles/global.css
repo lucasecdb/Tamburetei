@@ -6,6 +6,7 @@
   --color-link-hover: rgba(25, 158, 230, .54);
   --color-surface: #fff;
   --color-surface-accent: #f1f3f4;
+  --color-surface-accent-hover: rgba(0, 0, 0, 0.08);
   --color-border: lightgray;
 
   /* text colors */
@@ -18,6 +19,27 @@
   --on-surface-accent-hover: rgba(0, 0, 0, .56);
 }
 
+:root .dark {
+  /* base colors */
+  --color-primary: #343587;
+  --color-primary-hover: rgba(73, 121, 183);
+  --color-link: rgba(73, 121, 183, .24);
+  --color-link-hover: rgba(25, 158, 230, .54);
+  --color-surface: #121212;
+  --color-surface-accent: #1f1f1f;
+  --color-surface-accent-hover: #2d2d2d;
+  --color-border: rgba(255, 255, 255, .12);
+
+  /* text colors */
+  --on-primary: #fff;
+  --on-primary-hover: #fff;
+  --on-link: #fff;
+  --on-link-hover: #000;
+  --on-surface: rgba(255, 255, 255, .87);
+  --on-surface-accent: rgba(255, 255, 255, .87);
+  --on-surface-accent-hover: rgba(255, 255, 255, .87);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +48,12 @@
 
 html, body, #___gatsby, #gatsby-focus-wrapper {
   font-family: Roboto, sans-serif;
+  height: 100%;
+}
+
+body {
   background-color: var(--color-surface);
   color: var(--on-surface);
-  height: 100%;
 }
 
 a.link {

@@ -103,7 +103,7 @@ $menu-breakpoint: 600px;
 }
 
 .linkWrapper:hover {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: var(--color-surface-accent-hover);
   color: var(--on-surface-accent-hover);
 }
 

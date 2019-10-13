@@ -5,6 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import classNames from 'classnames'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
@@ -27,7 +28,9 @@ const Layout = ({ className = '', children }) => {
   return (
     <div className={styles.container}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main className={className}>{children}</main>
+      <main className={classNames(className, styles.mainContent)}>
+        {children}
+      </main>
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
           <a

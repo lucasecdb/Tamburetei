@@ -16,7 +16,7 @@
 
 .homeLink {
   text-decoration: none;
-  color: black;
+  color: var(--on-surface);
   display: flex;
   align-items: center;
 }
