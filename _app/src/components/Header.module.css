@@ -6,6 +6,8 @@
   margin: 0 auto;
   max-width: 1200px;
   padding: 1.45rem 1.0875rem;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -25,6 +27,16 @@
   display: inline-block;
   margin: 0;
   font-family: Rhetoric, sans-serif;
+}
+
+.themeButton {
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
+  color: var(--on-surface);
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
